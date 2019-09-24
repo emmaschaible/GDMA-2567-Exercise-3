@@ -40,6 +40,28 @@
 4.0 - ELEMENTS 
 -------------------------------------------------------------- */
 
+
+/* -- LISTS -- */ 
+
+li {
+    font-size: .8rem;
+    line-height: 1.6em;
+}
+
+li {
+    list-style: square;
+}
+
+div li {
+    margin-bottom: 30px;
+}
+
+a:hover {
+    color: #0f5abd;
+}
+
+
+
 /* -- TYPOGRAPHY -- */ 
 
 
@@ -47,24 +69,21 @@ h1 {
     font-size: 2rem;
     line-height: 1.3em;
     font-weight: 900;
-    margin-bottom: -5px;
+    margin-bottom: 1em;
+}
+
+h2 {
+    margin-top: 90px;
 }
 
 h1, h2, a, li, header > p {
-    color: #27b78a;
+    color: #099eb8;
 }
 
 p {
     font-size: .9rem;
     line-height: 2em;
-    color: #0c4862
 }
-
-li {
-    font-size: .8rem;
-    line-height: 1.6em;
-}
-
 
 h1, h2, p, li {
     font-family: -apple-system, BlinkMacSystemFont, 
@@ -76,19 +95,13 @@ a {
     color: 
 }
 
-/* -- LISTS -- */ 
 
-li {
-    list-style: square;
-}
 
-div > div > ul > li {
-    margin-bottom: 30px;
-}
+
+
 
 .responsive {
     width: 100%;
-    height: auto;
   }
 
 header > p {
@@ -98,7 +111,11 @@ header > p {
 
 @media only screen and (min-width: 768px) {
     html {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    p {
+        line-height: 1.5em;
     }
 
     h1 span {
@@ -107,11 +124,17 @@ header > p {
     
 }
 
+
 @media only screen and (min-width: 1024px) {
     html {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
+    p {
+        line-height: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
     h1 {
         font-size: 2.5rem;
     }
@@ -128,19 +151,17 @@ header > p {
 -------------------------------------------------------------- */
 
 .wrapper {
-    width: 70%;
+    width: 85%;
 }
 
 @media only screen and (min-width: 768px) {
     .wrapper {
         width: 70%;
     }
-}
-
-@media only screen and (max-width: 700px) {
     .hidden {
         display: none;
     }
+
 }
 
 @media only screen and (min-width: 1024px) {
